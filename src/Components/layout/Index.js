@@ -1,12 +1,13 @@
 import React from "react";
-import Posters from "../posters/Posters";
+import Welcome from "../layout/Welcome";
 import Search from "../posters/Search";
+import Posters from "../posters/Posters";
 
 function Index() {
   return (
     <React.Fragment>
       <Search />
-      <Posters />
+      <Welcome />
     </React.Fragment>
   );
 }

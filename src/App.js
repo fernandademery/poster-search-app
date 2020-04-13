@@ -16,7 +16,7 @@ function App() {
           <Container>
             <Switch>
               <Route exact path="/" component={Index} />
-              <Route path="/posters" component={Posters} />
+              <Route path="/search/:query" component={Posters} />
             </Switch>
           </Container>
         </React.Fragment>

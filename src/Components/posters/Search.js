@@ -1,30 +1,33 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { Consumer } from "../../context";
+import { Context, Consumer } from "../../context";
 import Card from "react-bootstrap/Card";
 import { Bookmark } from "react-feather";
 import { Form, Button } from "react-bootstrap";
 import { withRouter } from "react-router-dom";
 
 class Search extends Component {
-  state = {
-    query: "",
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      query: "",
+    };
+  }
 
   onChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   };
 
-  findTracks = (e) => {
+  findPosters = (e) => {
     e.preventDefault();
 
-    this.props.history.push(`/posters/${this.state.query}`);
+    this.props.history.push(`/search/${this.state.query}`);
   };
 
   render() {
     return (
       <Consumer>
-        {(value) => {
+        {(items) => {
           return (
             <Card>
               <Card.Body className="mb-4 p-4">
