@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import axios from "axios";
-import { Context, Consumer } from "../../context";
+import { Consumer } from "../../context";
 import Card from "react-bootstrap/Card";
 import { Bookmark } from "react-feather";
 import { Form, Button } from "react-bootstrap";
@@ -54,6 +53,7 @@ class Search extends Component {
                     block
                     className="mb-3"
                     type="submit"
+                    style={{ backgroundColor: "#555555" }}
                   >
                     Get Posters
                   </Button>

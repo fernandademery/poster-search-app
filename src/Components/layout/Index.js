@@ -1,7 +1,6 @@
 import React from "react";
 import Welcome from "../layout/Welcome";
 import Search from "../posters/Search";
-import Posters from "../posters/Posters";
 
 function Index() {
   return (

@@ -1,6 +1,7 @@
 import React from "react";
-import { Col, Card } from "react-bootstrap";
-import { Consumer } from "../../context";
+import { Col, Card, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { PlusSquare } from "react-feather";
 
 function Poster(props) {
   console.log(props);
@@ -8,8 +9,10 @@ function Poster(props) {
     <Col md={4}>
       <Card className="mb-4 shadow">
         <Card.Img variant="top" src={props.poster.thumb_url} />
+
         <Card.Body>
           <Card.Title>{props.poster.title}</Card.Title>
+
           <Card.Text>
             {props.poster.author_names.map((author) => (
               <h6 key={author} style={{ color: "#636066" }}>
@@ -21,6 +24,12 @@ function Poster(props) {
             <span style={{ color: "#636066", fontStyle: "italic" }}>
               Keywords: {props.poster.keywords.join(", ")}
             </span>
+
+            <Link to={`/poster/${props.poster.id}`}>
+              <Button variant="secondary" block style={{ marginTop: "10px" }}>
+                <PlusSquare size={18} /> Click for details
+              </Button>
+            </Link>
           </Card.Text>
         </Card.Body>
       </Card>
