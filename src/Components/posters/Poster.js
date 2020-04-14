@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { PlusSquare } from "react-feather";
 
 function Poster(props) {
-  console.log(props);
   return (
     <Col md={4}>
       <Card className="mb-4 shadow">

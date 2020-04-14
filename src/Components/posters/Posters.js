@@ -25,7 +25,6 @@ class Posters extends Component {
       <Consumer>
         {(items) => {
           const query = this.props.match.params.query;
-          console.log(items);
 
           if (items.items.length === 0 || items === undefined) {
             return <Spinner />;
