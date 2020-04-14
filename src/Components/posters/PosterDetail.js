@@ -43,7 +43,10 @@ class PosterDetail extends Component {
     } else {
       return (
         <React.Fragment>
-          <Row className="d-flex justify-content-between">
+          <Row
+            className="d-flex justify-content-between"
+            style={{ maxWidth: "80%" }}
+          >
             <Col>
               <Button
                 onClick={this.props.history.goBack}

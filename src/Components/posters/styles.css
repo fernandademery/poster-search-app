@@ -1,23 +1,21 @@
 @media (min-width: 750px) {
-    .poster-title {
-        font-size: 32px;
-    }
+  .poster-title {
+    font-size: 32px;
+  }
 
-    .search-button {
-
-        position: absolute;
-        right: -1100px;
-    }
+  .search-button {
+    position: fixed;
+    margin-left: 1000px;
+  }
 }
 
-
 .poster-subtitle {
-    color: #636066;
-    font-weight: 300;
+  color: #636066;
+  font-weight: 300;
 }
 
 .keywords {
-    color: #636066;
-    font-style: italic;
-    padding-top: 10px
+  color: #636066;
+  font-style: italic;
+  padding-top: 10px;
 }
