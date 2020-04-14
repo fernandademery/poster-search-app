@@ -45,6 +45,7 @@ class Search extends Component {
                       name="query"
                       value={this.state.query}
                       onChange={this.onChange}
+                      required
                     />
                   </Form.Group>
                   <Button
