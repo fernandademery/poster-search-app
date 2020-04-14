@@ -16,7 +16,7 @@ class PosterDetail extends Component {
   componentDidMount() {
     axios
       .get(
-        `http://cors-anywhere.herokuapp.com/https://staging-ng.morressier.com/events_manager/v2/posters/${this.props.match.params.posterId}`
+        `https://cors-anywhere.herokuapp.com/https://staging-ng.morressier.com/events_manager/v2/posters/${this.props.match.params.posterId}`
       )
       .then((res) => {
         this.setState({

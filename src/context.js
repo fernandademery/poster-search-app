@@ -24,7 +24,7 @@ export class Provider extends Component {
       offset,
     });
     const { data } = await axios.get(
-      `http://cors-anywhere.herokuapp.com/https://staging-ng.morressier.com/events_manager/v3/posters/search?query=${query}&limit=${limit}&offset=${offset}`
+      `https://cors-anywhere.herokuapp.com/https://staging-ng.morressier.com/events_manager/v3/posters/search?query=${query}&limit=${limit}&offset=${offset}`
     );
     this.setState({
       items: data.posters,
