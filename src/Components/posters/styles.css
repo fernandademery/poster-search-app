@@ -4,7 +4,7 @@
   }
 
   .search-button {
-    position: fixed;
+    position: absolute;
     margin-left: 1000px;
   }
 }
